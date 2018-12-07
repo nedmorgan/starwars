@@ -1,16 +1,109 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Star Wars App</title>
-  </head>
-  <body>
-    <h1>Star Wars</h1>
-    <button id="submit">MAY THE FORCE BE WITH YOU!</button>
 
-<script src="js/main.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <title>Star Wars Finder</title>
+</head>
+
+<body>
+  <h1>Star Wars</h1>
+  <select class="select-char" id="character">
+    <option value="">Choose your character</option>
+    <option value="Luke Skywalker">Luke Skywalker</option>
+    <option value="C-3PO">C-3PO</option>
+    <option value="R2-D2">R2-D2</option>
+    <option value="Darth Vader">Darth Vader</option>
+    <option value="Leia Organa">Leia Organa</option>
+    <option value="Owen Lars">Owen Lars</option>
+    <option value="Beru Whitesun lars">Beru Whitesun Lars</option>
+    <option value="R5-D4">R5-D4</option>
+    <option value="Biggs Darklighter">Biggs Darklighter</option>
+    <option value="Obi-Wan Kenobi">Obi-Wan Kenobi</option>
+    <option value="Anakin Skywalker">Anakin Skywalker</option>
+    <option value="Wilhuff Tarkin">Wilhuff Tarkin</option>
+    <option value="Chewbacca">Chewbacca</option>
+    <option value="Han Solo">Han Solo</option>
+    <option value="Greedo">Greedo</option>
+    <option value="Jabba Desilijic Tiure">Jabba Desilijic Tiure</option>
+    <option value="Wedge Antilles">Wedge Antilles</option>
+    <option value="Jek Tono Porkins">Jek Tono Porkins</option>
+    <option value="Yoda">Yoda</option>
+    <option value="Palpatine">Palpatine</option>
+    <option value="Boba Fett">Boba Fett</option>
+    <option value="IG-88">IG-88</option>
+    <option value="Bossk">Bossk</option>
+    <option value="Lando Calrissian">Lando Calrissian</option>
+    <option value="Lobot">Lobot</option>
+    <option value="Ackbar">Ackbar</option>
+    <option value="Mon Mothma">Mon Mothma</option>
+    <option value="Arvel Crynyd">Arvel Crynyd</option>
+    <option value="Wicket Systri Warrick">Wicket Systri Warrick</option>
+    <option value="Nien Nunb">Nien Nunb</option>
+    <option value="Qui-Gon Jinn">Qui-Gon Jinn</option>
+    <option value="Nute Gunray">Nute Gunray</option>
+    <option value="Finis Valorum">Finis Valorum</option>
+    <option value="Jar Jar Binks">Jar Jar Binks</option>
+    <option value="Roos Tarpals">Roos Tarpals</option>
+    <option value="Rugor Nass">Rugor Nass</option>
+    <option value="Ric Olié">Ric Olié</option>
+    <option value="Watto">Watto</option>
+    <option value="Sebulba">Sebulba</option>
+    <option value="Quarsh Panaka">Quarsh Panaka</option>
+    <option value="Shmi Skywalker">Shmi Skywalker</option>
+    <option value="Darth Maul">Darth Maul</option>
+    <option value="Bib Fortuna">Bib Fortuna</option>
+    <option value="Ayla Secura">Ayla Secura</option>
+    <option value="Dud Bolt">Dud Bolt</option>
+    <option value="Gasgano">Gasgano</option>
+    <option value="Ben Quadinaros">Ben Quadinaros</option>
+    <option value="Mace Windu">Mace Windu</option>
+    <option value="Ki-Adi-Mundi">Ki-Adi-Mundi</option>
+    <option value="Kit Fisto">Kit Fisto</option>
+    <option value="Eeth Koth">Eeth Koth</option>
+    <option value="Adi Gallia">Adi Gallia</option>
+    <option value="Saesee Tiin">Saesee Tiin</option>
+    <option value="Yarael Poof">Yarael Poof</option>
+    <option value="Plo Koon">Plo Koon</option>
+    <option value="Mas Amedda">Mas Amedda</option>
+    <option value="Gregar Typho">Gregar Typho</option>
+    <option value="Cordé">Cordé</option>
+    <option value="Cliegg Lars">Cliegg Lars</option>
+    <option value="Poggle the Lesser">Poggle the Lesser</option>
+    <option value="Luminara Unduli">Luminara Unduli</option>
+    <option value="Barriss Offee">Barriss Offee</option>
+    <option value="Dormé">Dormé</option>
+    <option value="Dooku">Dooku</option>
+    <option value="Bail Prestor Organa">Bail Prestor Organa</option>
+    <option value="Jango Fett">Jango Fett</option>
+    <option value="Zam Wesell">Zam Wesell</option>
+    <option value="Dexter Jettseter">Dexter Jettster</option>
+    <option value="Lama Su">Lama Su</option>
+    <option value="Taun We">Taun We</option>
+    <option value="Jocasta Nu">Jocasta Nu</option>
+    <option value="Ratts Tyerell">Ratts Tyerell</option>
+    <option value="R4-P17">R4-P17</option>
+    <option value="Wat Tambor">Wat Tambor</option>
+    <option value="San Hill">San Hill</option>
+    <option value="Shaak Ti">Shaak Ti</option>
+    <option value="Grievous">Grievous</option>
+    <option value="Tarfful">Tarfful</option>
+    <option value="Raymus Antilles">Raymus Antilles</option>
+    <option value="Sly Moore">Sly Moore</option>
+    <option value="Tion Medon">Tion Medon</option>
+    <option value="Finn">Finn</option>
+    <option value="Rey">Rey</option>
+    <option value="Poe Dameron">Poe Dameron</option>
+    <option value="BB8">BB8</option>
+    <option value="Captain Phasma">Captain Phasma</option>
+    <option value="Padmé Amidala">Padmé Amidala</option>
+  </select>
+  <button id="submit">MAY THE FORCE BE WITH YOU!</button>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>
