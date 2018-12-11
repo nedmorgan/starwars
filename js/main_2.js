@@ -1,11 +1,23 @@
 const characterSelect = document.getElementById('characterSelect');
 const characterBio = document.getElementById('characterBio');
 let people = [];
+let urls = [
+  'https://swapi.co/api/people/?page=1',
+  'https://swapi.co/api/people/?page=2',
+  'https://swapi.co/api/people/?page=3',
+  'https://swapi.co/api/people/?page=4',
+  'https://swapi.co/api/people/?page=5',
+  'https://swapi.co/api/people/?page=6',
+  'https://swapi.co/api/people/?page=7',
+  'https://swapi.co/api/people/?page=8'
+];
 
-fetch('https://swapi.co/api/people/')
-  .then(res => res.json())
+let requests = urls.map(url => fetch(url));
+
+Promise.all(requests)
+  .then(res => Promise.all(res.map(r => r.json())))
   .then(res => {
-    people = res.results;
+    people = r.results;
     render();
     // console.log(res)
   })
