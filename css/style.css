@@ -9,19 +9,86 @@
 html {
   margin: 0 auto;
   font-size: 20px;
+  background-color: black
 }
 
 h1 {
   text-align: center;
+  color: whitesmoke;
 }
 
 .title {
   font-size: 4rem;
   font-family: 'star_jediregular', sans-serif;
+  margin: 25px;
+  color: whitesmoke;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+select {
+  font-family: 'Franklin Gothic Medium',
+    'Arial Narrow',
+    Arial,
+    sans-serif;
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
+  background: black;
+  font-size: .8rem;
+  font-weight: bold;
+  padding: 7px;
+}
+
+button {
+  border-radius: 5px;
+  color: whitesmoke;
+  background: black;
+  font-size: .8rem;
+  text-align: center;
+  border: none;
+  border: 2px solid whitesmoke;
+  margin-left: 10px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium',
+    'Arial Narrow',
+    Arial,
+    sans-serif;
+  padding: 7px;
+}
+
+button:hover {
+  cursor: pointer;
+  background: whitesmoke;
+  color: black;
 }
 
 p {
   font-size: 2rem;
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: whitesmoke;
+}
+
+.star {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid whitesmoke;
+  position: relative;
+}
+
+.star:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid whitesmoke;
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: -5px;
 }

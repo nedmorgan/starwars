@@ -106,3 +106,24 @@ function renderBio() {
 }
 
 submit.addEventListener('click', renderBio);
+
+//stars to twinkle in a random position
+function randomPosition(element) {
+  let x = document.body.offsetHeight - element.clientHeight;
+  let y = document.body.offsetWidth - element.clientWidth;
+  let randomX = Math.floor(Math.random() * x);
+  let randomY = Math.floor(Math.random() * y);
+  return [randomX, randomY];
+}
+
+window.onload = function () {
+  function twinkleStar() {
+    let div = document.getElementById('twinkle');
+    div.classList.add('star');
+    div.setAttribute("style", "position:absolute;");
+    let xy = randomPosition(div);
+    div.style.top = xy[0] + 'px';
+    div.style.left = xy[1] + 'px';
+  }
+  setInterval(twinkleStar, 2000);
+}
